@@ -48,6 +48,7 @@ header {
 .menu {
     display: flex;
     list-style: none;
+    margin-left: auto;
 }
 
 .menu li {
