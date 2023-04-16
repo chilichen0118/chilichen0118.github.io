@@ -51,13 +51,13 @@ $(function () {
         mouseY = e.clientY;
     });
     setInterval(function () {
-        cursorX += (mouseX - cursorX) / 20; //後面的數字愈小動愈快
+        cursorX += (mouseX - cursorX) / 20; 
         cursorY += (mouseY - cursorY) / 20;
         $('.cursor').css({
             'top': cursorY + 'px',
             'left': cursorX + 'px',
         })
-    }, 10) //每幾毫秒更新一次，數字愈小愈流暢
+    }, 10)
 });
 
 $('.menu-btn').on('click', function(){
