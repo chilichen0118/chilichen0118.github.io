@@ -615,6 +615,7 @@ footer span {
         height: 30px;
         margin-top: 15px;
         cursor: pointer;
+        z-index: 1000;
     }
     
     .menu-btn div {
@@ -624,12 +625,14 @@ footer span {
         height: 1.5px;
         border-radius: 1.5px;
         background: #333;
+        z-index: 11;
     }
     
     .menu-btn div:nth-of-type(2) {
         top: 8px;
         right: 0;
         width: 80%;
+        
     }
 
 
@@ -641,7 +644,7 @@ footer span {
         position: fixed;
         background: #82c956;
         width: 100%;
-        height: 100vh;
+        height: 0;
         top: 0;
         left: 0;
         opacity: 0;
@@ -650,6 +653,7 @@ footer span {
 
     .menu.active {
         opacity: 1;
+        height: 100vh;
     }
 
     .menu-item {
